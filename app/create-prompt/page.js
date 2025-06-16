@@ -6,7 +6,7 @@ import React, { useState } from "react";
 
 const Create = () => {
   const router = useRouter();
-  const { data: session } = router;
+  const { data: session } = useSession();
   const [submitting, setSubmitting] = useState(false);
   const [post, setPosts] = useState({
     prompt: "",
