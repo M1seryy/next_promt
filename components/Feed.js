@@ -15,6 +15,7 @@ const PromptCardList = ({ data, handleTagClick }) => {
 const Feed = () => {
   const [posts, setPosts] = useState([]);
   const [textSearch, setSearch] = useState();
+
   const fetchPosts = async () => {
     console.log("start fetching");
 
